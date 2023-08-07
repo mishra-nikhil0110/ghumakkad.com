@@ -6,6 +6,8 @@ import heroImage02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import Subtitle from "./../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
+import SearchBar from "../shared/SearchBar";
+import ServiceList from "../services/ServiceList";
 
 const Home = () => (
   <>
@@ -19,8 +21,8 @@ const Home = () => (
                 <img src={worldImg} alt="worldIMAGE"></img>
               </div>
               <h1>
-                You Should travel across the world, It makes{" "}
-                <span className="highlight">Memories</span>
+                Travel across the world, make awesome
+                <span className="highlight"> Memories</span>
               </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -31,20 +33,35 @@ const Home = () => (
             </div>
           </Col>
           <Col lg="2">
-            <div className="hero__img-box mt-5">
+            <div className="hero__img-box ">
               <img src={heroImage} alt="heroImage"></img>
             </div>
           </Col>
           <Col lg="2">
-            <div className="hero__img-box mt-3">
+            <div className="hero__img-box mt-2">
               <video src={heroVideo} alt="heroVideo" controls></video>
             </div>
           </Col>
           <Col lg="2">
-            <div className="hero__img-box">
+            <div className="hero__img-box mt-4 ">
               <img src={heroImage02} alt="heroImage"></img>
             </div>
           </Col>
+          <SearchBar />
+        </Row>
+      </Container>
+    </section>
+
+    {/* =======hero section =========== */}
+    <section>
+      <Container>
+        <Row>
+          <Col lg="3">
+<h5 className="services__subtitle">Our Services</h5>
+<h2 className="service__title">We offer best services for you</h2>
+
+          </Col>
+          <ServiceList/>
         </Row>
       </Container>
     </section>
