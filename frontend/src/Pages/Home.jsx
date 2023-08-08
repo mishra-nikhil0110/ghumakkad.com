@@ -8,6 +8,8 @@ import Subtitle from "./../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
+import FeaturedTourList from "../components/Featured-Tours/FeaturedTourList";
+
 
 const Home = () => (
   <>
@@ -65,6 +67,24 @@ const Home = () => (
         </Row>
       </Container>
     </section>
+    {/* ==========Feature section====== */}
+
+
+ <section>
+<Container>
+  <Row>
+    <Col lg="12" className="mb-5">
+      <Subtitle subtitle={'Explore'} />
+      <h2 className="featured__tour-title">Our Services</h2>
+    </Col>
+    <FeaturedTourList />
+  </Row>
+</Container>
+
+ </section>
+ {/* ===========feature section end========= */}
+ 
+
   </>
 );
 
