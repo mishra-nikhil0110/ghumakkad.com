@@ -8,7 +8,7 @@
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 2rem;
- color: var(--heading-color);
+  color: var(--heading-color);
 }
 .hero__content h1 .highlight {
   color: var(--secondary-color);
@@ -41,20 +41,69 @@
   padding-top: 2rem;
 }
 
-
-.services__subtitle{
+.services__subtitle {
   font-size: 2.2rem;
   font-weight: 600;
   color: #ee6e6e;
-  font-family: var(--subtitle-font-name) ;
-
+  font-family: var(--subtitle-font-name);
 }
-.services__title{
+.services__title {
   font-size: 2.5rem;
   font-weight: 500;
-
 }
-.featured__tour-title{
-  font-weight:500;
+.featured__tour-title {
+  font-weight: 500;
   font-size: 2.3rem;
+}
+.featured__tour-title {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.experience__content h2 {
+  font-style: 2.3rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.experience__content p {
+  font-style: 1.1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+.counter__wrapper {
+  margin-top: 2.5rem;
+}
+.counter__box span {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: #fff;
+  font-style: 1.6rem;
+  font-weight: 600;
+  border-radius: 10px 5px 10px 5px;
+}
+.counter__box h6 {
+  font-style: 1.1rem;
+  margin-top: 0.7rem;
+  color: var(--text-color);
+}
+
+.gallery_title {
+  font-style: 2.3rem;
+  margin-bottom: 1.8rem;
+  margin-top: 1rem;
+}
+
+.masonry__img {
+  transition: 0.3s;
+}
+.masonry__img:hover {
+  transform: scale(1.06);
+}
+.testimonials__title {
+  font-style: 2.3rem;
+  margin-top: 1rem;
 }

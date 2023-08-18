@@ -9,7 +9,10 @@ import worldImg from "../assets/images/world.png";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-Tours/FeaturedTourList";
-
+import expImage from "../assets/images/tourist-ps.png";
+import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
+import Testimonials from "../components/Testimonial/Testimonials";
+import Newsletter from "../shared/Newsletter";
 
 const Home = () => (
   <>
@@ -59,32 +62,106 @@ const Home = () => (
       <Container>
         <Row>
           <Col lg="3">
-<h5 className="services__subtitle">Our Services</h5>
-<h2 className="service__title">We offer best services for you</h2>
-
+            <h5 className="services__subtitle">Our Services</h5>
+            <h2 className="service__title">We offer best services for you</h2>
           </Col>
-          <ServiceList/>
+          <ServiceList />
         </Row>
       </Container>
     </section>
     {/* ==========Feature section====== */}
 
+    <section>
+      <Container>
+        <Row>
+          <Col lg="12" className="mb-5">
+            <Subtitle subtitle={"Explore"} />
+            <h2 className="featured__tour-title">Our featured tours</h2>
+          </Col>
+          <FeaturedTourList />
+        </Row>
+      </Container>
+    </section>
+    {/* ===========feature section end========= */}
+    {/* ============Experience section start */}
 
- <section>
-<Container>
-  <Row>
-    <Col lg="12" className="mb-5">
-      <Subtitle subtitle={'Explore'} />
-      <h2 className="featured__tour-title">Our Services</h2>
-    </Col>
-    <FeaturedTourList />
-  </Row>
-</Container>
+    <section>
+      <Container>
+        <Row>
+          <Col lg="6">
+            <div className="experince__content">
+              <Subtitle subtitle={"Experience"} />
+              <h2>
+                With our all Experience <br /> we will serve you
+              </h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                sapiente nam magni laboriosam ex blanditiis nisi rem adipisci
+                optio libero, nobis explicabo, doloremque iusto, vero fuga
+                obcaecati molestias voluptatum aspernatur.
+              </p>
+            </div>
+            <div className="counter__wrapper d-flex align-items-center gap-5">
+              <div className="counter__box">
+                <span>12k</span>
+                <h6>Successfull Trip</h6>
+              </div>
+              <div className="counter__box">
+                <span>2k+</span>
+                <h6>Regular Clients</h6>
+              </div>
+              <div className="counter__box">
+                <span>15</span>
+                <h6>Years Experince</h6>
+              </div>
+            </div>
+          </Col>
+          <Col lg="6">
+            <div className="experience__img">
+              <img src={expImage} alt="exp_image" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
 
- </section>
- {/* ===========feature section end========= */}
- 
+    {/* ============Experience section end */}
 
+    {/* =====gallary section start */}
+
+    <section>
+      <Container>
+        <Row>
+          <Col lg="12">
+            <Subtitle subtitle={"Gallery"} />
+            <h2 className="gallery_title">Visit our customers tour gallary </h2>
+          </Col>
+          <Col lg="12">
+            <MasonryImagesGallery />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    {/* =====gallary section end */}
+    {/* ======testimonial section start====== */}
+    <section>
+      <Container>
+        <Row>
+          <Col lg="12">
+            <Subtitle subtitle={"Fans Love"} />
+            <h2 className="testimonial__title">What our fans say about us</h2>
+          </Col>
+          <Col lg="12">
+            <Testimonials />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    {/* ======testimonial section end ====== */}
+    {/* =======NewsLetter section start===== */}
+    <Newsletter />
+
+    {/* =======NewsLetter section end===== */}
   </>
 );
 
