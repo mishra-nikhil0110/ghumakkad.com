@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 import "./header.css";
 
 const nav__links = [
